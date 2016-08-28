@@ -20,6 +20,7 @@ function showCities(){
 
 			// Clear the Cities select element
 			$('#cities').html('');
+			$('#cities').append('<option value='+'>'+'Please select a City'+'</option>');
 
 			// Check to see if there was an error returning
 			if(dataFromServer != 'error'){
