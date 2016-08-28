@@ -26,19 +26,6 @@
 		</select>
 
 		<select id="cities" name="cities">
-			<option>Please select a city</option>
-			<?php
-				$dbc = new mysqli('localhost', 'root', '', 'ajax-new');
-
-				$sql = "SELECT CityName, CityID FROM Cities";
-
-				$result = $dbc->query($sql);
-
-				while($country = $result->fetch_assoc() ) : ?>
-
-					<option value="<?= $country['CountryID'] ?>"><?= $country['CityName'] ?></option>
-
-				<?php endwhile; ?>
 		</select>
 
 		<select id="suburb" name="suburb">

@@ -32,10 +32,6 @@ function showCities(){
 				$('#cities').append('<option value='+'>There are no Cities</option>')
 			}
 
-
-
-
-
 		},
 		error: function(){
 			console.log('Cannot connect to server.... ')
